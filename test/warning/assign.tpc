@@ -1,0 +1,15 @@
+int main(void){
+	int *p;
+	int a;
+	char c;
+
+	*p = 2;
+	a = 4;
+	c = 'c';
+
+	*p = a;
+	p = a;
+
+	a = c;
+	c = a;
+}

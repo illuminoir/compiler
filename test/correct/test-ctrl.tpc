@@ -1,0 +1,14 @@
+int main(void)  {
+  int a, b;
+  a = 1;
+  b = 5;
+  while (a < 4) {
+    print(a);
+	a = a + 1;
+  }
+
+  if(b == 5){
+  	print('b');
+  }
+
+}

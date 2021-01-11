@@ -1,0 +1,30 @@
+/* test-table-symboles.tpc */
+
+/* Test file for simplified translator of a declaration of variables in C */
+int r1,r2;
+char punct;
+/*
+char foo(char c, int x) {
+  return c + x;
+}
+*/
+
+int bar(void){
+	return 5;
+
+	r1 = 10;
+}
+
+int fibo(int f1, int f2){
+  return f1;
+}
+
+
+int main(void)  {
+  int e;
+  char x, z;
+  r1=12;
+  r2=24;
+  punct='.';
+  print(fibo(r1, r2));
+}

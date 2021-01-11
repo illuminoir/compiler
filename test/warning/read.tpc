@@ -1,0 +1,10 @@
+int main(void){
+	int a;
+	char b;
+
+	readc(a);
+	reade(b);
+
+	print(a);
+	print(b);
+}

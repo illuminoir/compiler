@@ -1,0 +1,55 @@
+#!/bin/bash
+
+#chmod +x script
+
+make
+
+if [ -e resultat.txt ]
+then 
+    rm resultat.txt
+fi    
+
+echo "---------------------------- CORRECT FILES ----------------------------" &>> resultat.txt
+echo -e "\n" &>> resultat.txt
+	
+file_list=$(ls test/correct)
+	
+for fichier in $file_list
+do 
+    echo "###################Running compiler on file [$fichier]###################" &>> resultat.txt
+    echo "########################################################################################" &>> resultat.txt
+    ./bin/compil -o tmp.asm < "test/correct/$fichier" &>> resultat.txt
+    echo -e "\n" &>> resultat.txt
+done 
+  
+
+echo "---------------------------- ERROR FILES ----------------------------" &>> resultat.txt
+echo -e "\n" &>> resultat.txt
+	
+file_list=$(ls test/error)
+	
+for fichier in $file_list
+do 
+    echo "###################Running compiler on file [$fichier]###################" &>> resultat.txt
+    echo "########################################################################################" &>> resultat.txt
+    ./bin/compil -o tmp.asm < "test/error/$fichier" &>> resultat.txt
+    echo -e "\n" &>> resultat.txt
+done 
+  
+
+echo "---------------------------- WARNING FILES ----------------------------" &>> resultat.txt
+echo -e "\n" &>> resultat.txt
+	
+file_list=$(ls test/warning)
+	
+for fichier in $file_list
+do 
+    echo "###################Running compiler on file [$fichier]###################" &>> resultat.txt
+    echo "########################################################################################" &>> resultat.txt
+    ./bin/compil -o tmp.asm < "test/warning/$fichier" &>> resultat.txt
+    echo -e "\n" &>> resultat.txt
+done    
+
+rm tmp.asm
+
+echo "result of files stored in file resultat.txt"

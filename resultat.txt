@@ -1,0 +1,114 @@
+---------------------------- CORRECT FILES ----------------------------
+
+
+###################Running compiler on file [fonctions.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [loops_read_if.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [math_operations.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [order.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [pointers.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [test-bool.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [test-ctrl.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [test-table-symboles.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+###################Running compiler on file [test.tpc]###################
+########################################################################################
+compiled successfully.
+
+
+---------------------------- ERROR FILES ----------------------------
+
+
+###################Running compiler on file [empty_file.tpc]###################
+########################################################################################
+semantic error: undefined reference to 'main'
+[0;31mfatal error: [0mcompilation terminated.
+
+
+###################Running compiler on file [lexical_error.tpc]###################
+########################################################################################
+lexical error on line 5 at character 1
+--->$i
+    ^
+
+
+###################Running compiler on file [nested_functions.tpc]###################
+########################################################################################
+syntax error near line 18
+--->int nested(int a, int b, 
+                           ^
+
+
+###################Running compiler on file [pointer_in_op.tpc]###################
+########################################################################################
+line 5: [1;31merror:[0m cannot use pointer in operation
+[0;31mfatal error: [0mcompilation terminated.
+
+
+###################Running compiler on file [read_in_if.tpc]###################
+########################################################################################
+syntax error near line 17
+--->           print(c);  
+                        ^
+
+
+---------------------------- WARNING FILES ----------------------------
+
+
+###################Running compiler on file [assign.tpc]###################
+########################################################################################
+line 11:[1;35m warning:[0m assignment makes pointer from integer
+line 14:[1;35m warning:[0m assigning [1m'int'[0m type to [1m'char'[0m left-value [1;36ma[0m
+compiled successfully.
+
+
+###################Running compiler on file [fonctions.tpc]###################
+########################################################################################
+line 13:[1;35m warning:[0m passing argument 1 of ‘test’ makes pointer from integer without a cast 
+line 15:[1;35m warning:[0m passing argument 2 [1m'int'[0m type when expected a  [1m'char'[0m type argument [1;36m[0m
+compiled successfully.
+
+
+###################Running compiler on file [read.tpc]###################
+########################################################################################
+line 5:[1;35m warning:[0m call to readc on int, type [1m'char'[0m expected
+line 6:[1;35m warning:[0m call to reade on [1m'char'[0m, type [1m'int'[0m expected
+compiled successfully.
+
+
+###################Running compiler on file [return.tpc]###################
+########################################################################################
+line 6:[1;35m warning:[0m return makes integer from pointer without a cast
+compiled successfully.
+
+

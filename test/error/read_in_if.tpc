@@ -1,0 +1,27 @@
+/* #include <stdio.h>
+   #include <math.h> */
+/* test of calling read inside a if (not supported by the grammar) */
+int r1, r2;
+
+int main(void) {
+   int b, c;
+   char a;
+   
+   reade(b);
+
+   while (b<=1) {
+       reade(c);
+       while (c<=1) {
+           print(b);
+           print(c);
+           if (readc(a)) {
+                print(r1);
+                print(r2);
+                return 0;
+           }
+           c=c+1;
+       }
+       b=b+1;
+   }
+   return 0;
+}

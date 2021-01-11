@@ -1,0 +1,25 @@
+/* #include <stdio.h>
+   #include <math.h> */
+/* test for math operations */
+int r1, r2;
+
+int main(void) {
+   int b, c;
+
+   if(1 >= 2){
+        print('y');
+   }
+
+   b = 4;
+   c = 8;
+
+   if(c > b){
+        print('n');
+   }
+
+   if(b != c){
+        print('n');
+   }
+
+   return 0;
+}

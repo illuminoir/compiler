@@ -1,0 +1,21 @@
+
+
+
+int main(void){
+	
+	int *a, b, c;
+
+ 
+	a = &b;
+	*a = 20;
+	print(b);
+
+
+
+	b = 2;
+	a = &b;
+	c = *a;
+	print(c);
+
+	
+}

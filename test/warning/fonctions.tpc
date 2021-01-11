@@ -1,0 +1,16 @@
+void test(int* a, char b){
+	*a = 2;
+
+	b = 'c';
+}
+
+
+int main(void){
+	int *p;
+	int a;
+	char b;
+
+	test(a, b);
+
+	test(p, a);
+}

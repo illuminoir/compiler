@@ -1,0 +1,25 @@
+/* test for lexical errors */
+/* int nested(int a, int b, char c, char d);
+    int nested_in_nest(int c, char d); */
+
+$
+
+int main(void) {
+    /* this is a test for the syntax of nested functions */
+    int x, y;
+    char p, q;
+
+    x = 2*3;
+
+    p = 'a';
+
+    nested(x, y, p, q);
+}
+
+int nested(int a, int b, char c, char d) {
+    int nested_in_nest(int c, char d){
+        if(c == 'a'){
+            print(nested_in_nest(b, d));
+        }
+    }
+}

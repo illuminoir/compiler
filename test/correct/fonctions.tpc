@@ -1,0 +1,32 @@
+void cmp(int a, int b){
+	if(a > b){
+		print('a');
+	}
+	else {
+		print('b');
+	}
+    return;
+
+}
+
+
+int renvoi(int c){
+	return c;
+}
+
+
+int main(void){
+	int a, c;
+
+	a = 2;
+
+	print(renvoi(4));
+
+	c = renvoi(a);
+
+
+	print(renvoi(c));
+	
+	cmp(a, c);
+
+}

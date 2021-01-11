@@ -1,0 +1,15 @@
+int* cmp(void){
+	int a;
+
+	a = 2;
+
+	return a;
+}
+
+int main(void){
+	int c;
+
+	c = 2;
+
+	print(c);
+}

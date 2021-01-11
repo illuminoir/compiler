@@ -1,0 +1,13 @@
+int main(void){
+	int a, b;
+	char x;
+
+	a = 1;
+
+	b = 3;
+	x = 'd';
+
+	print(a);
+	print(b);
+	print(x);
+}
